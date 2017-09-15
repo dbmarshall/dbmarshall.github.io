@@ -10,12 +10,41 @@ body {
   color: #777;
   background-image: url('../images/fabric_1.png');
 }
-#container {
+h1, h2, h3, h4 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-weight: bold;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  padding-bottom: 26px;
+  border-bottom: 3px solid #ddd;
+}
+h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #eee;
+}
+h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+}
+p {
+  padding: 10px 0;
+  line-height: 1.9;
+}
+.tealback {
+  background-color: #4aaaa5;
+}
+.tealtext {
+  color: #4aaaa5;
+}
 
-}
-#main {
-  
-}
 header, section, footer {
   /*display: block;
   clear: both;*/
@@ -36,14 +65,15 @@ footer .copyright {
   color: #ccc;
   padding: 22px 0;
 }
+#container {
+
+}
+#main {
+
+}
 .mainwrapper {
   width: 960px;
   margin: 0 auto;
-}
-#main .content img {
-  width: 200px;
-  padding: 22px 22px 10px 0;
-  float: left;
 }
 #name {
   padding: 35px;
@@ -71,6 +101,11 @@ footer .copyright {
   width: 594px;
   float: left;
 }
+img.profileimage {
+  width: 200px;
+  padding: 22px 22px 10px 0;
+  float: left;
+}
 .social {
   /*width: 26%;*/
   width: 214px;
@@ -94,35 +129,39 @@ footer .copyright {
   background-color: #fff;
   border: 1px solid #ddd;
 }
-h1, h2, h3 {
-  font-family: 'Georgia', Times, Times New Roman, serif;
-  font-weight: bold;
+.gallery {
+  color: #fff;
+  text-align: center;
 }
-h1 {
-  font-size: 32px;
+.thumb {
+  position: relative;
+  width: 275px;
+  margin: 20px 0 15px 0;
+  opacity: .8;
+  float: left;
 }
-h2 {
-  font-size: 28px;
-  margin-bottom: 12px;
-  padding-bottom: 26px;
-  border-bottom: 3px solid #ddd;
+.thumb.even {
+  float: right;
 }
-h3 {
-  font-size: 22px;
-  margin-bottom: 20px;
-  padding-bottom: 16px;
-  border-bottom: 2px solid #eee;
+.thumb:hover {
+  opacity: 1;
 }
-p {
-  padding: 10px 0;
-  line-height: 1.9;
+.thumb img {
+  width: 273px;
+  border: 1px solid #ccc;
 }
-.tealback {
-  background-color: #4aaaa5;
+.label {
+  position: absolute;
+  z-index: 5;
+  bottom: 10px;
+  width: 100%;
+  height: 20px;
+  padding: 18px 0;
+  background-color:rgba(74, 170, 165, 0.9);
+  pointer-events: none;
 }
-.tealtext {
-  color: #4aaaa5;
-}
+
+
 
 
 
