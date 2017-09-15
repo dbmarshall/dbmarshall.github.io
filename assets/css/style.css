@@ -55,6 +55,10 @@ header {
   border-bottom: 2px solid #ccc;
 }
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 94px;
   color: #c5ccb8;
   text-align: center;
   background-color: #666;
@@ -66,7 +70,7 @@ footer .copyright {
   padding: 22px 0;
 }
 #container {
-
+  margin-bottom: 94px;
 }
 #main {
 
