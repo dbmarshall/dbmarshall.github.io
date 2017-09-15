@@ -19,7 +19,7 @@ h1 {
 }
 h2 {
   font-size: 28px;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
   padding-bottom: 26px;
   border-bottom: 3px solid #ddd;
 }
@@ -136,7 +136,7 @@ img.profileimage {
 .thumb {
   position: relative;
   width: 275px;
-  margin: 20px 0 15px 0;
+  margin: 0 0 30px 0;
   opacity: .8;
   float: left;
 }
@@ -150,6 +150,9 @@ img.profileimage {
   width: 273px;
   border: 1px solid #ccc;
 }
+.thumb.bottom {
+  margin-bottom: 0;
+}
 .label {
   position: absolute;
   z-index: 5;
@@ -160,7 +163,38 @@ img.profileimage {
   background-color:rgba(74, 170, 165, 0.9);
   pointer-events: none;
 }
-
+input, textarea {
+  width: 100%;
+  margin: 8px 0 20px 0;
+  padding: 13px 10px;
+  font-size: 16px;
+  box-sizing : border-box;
+}
+textarea {
+  resize: vertical;
+}
+button {
+  display: inline-block;
+  padding: 14px 30px;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #53BFBA;
+}
+button:active {
+  background: #3D8C88;
+}
+button:focus {
+  outline:0;
+}
+::placeholder {
+  color: #a9a9a9;
+}
 
 
 
