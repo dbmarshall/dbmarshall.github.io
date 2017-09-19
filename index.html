@@ -1,53 +1,60 @@
-<!-- CSS Stylesheets with Relative Paths -->
-
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Basic Portfolio :: David Morse</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <title>Bootstrap Portfolio :: David Morse :: About Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 
-  <div id="container">
-
-    <header>
-      <div class="mainwrapper">
-        <div id="name" class="tealback">
-          <h1>David Morse</h1>
-        </div>
-        <div id="nav">
-          <p><a href="index.html" title="About Me">About</a> <span>|</span> <a href="portfolio.html" title="My Portfolio">Portfolio</a> <span>|</span> <a href="contact.html" title="Contact Me">Contact</a></p>
+  
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <div id="name" class="navbar-brand tealback">
+          David Morse
         </div>
       </div>
-    </header>
+      <div id="navbar"> 
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <section id="main">
-      <div class="mainwrapper">
 
-        <div class="content maincontent">
-          <h2 class="tealtext">About Me</h2>
-          <img src="assets/images/David-OldTown-Jerusalem.jpg" alt="me" class="profileimage">
-          <p>I know my way around the front-end of web development, rising to peripheral challenges that have arisen over the years, a jack of all trades when duty calls.  I've managed projects, done some SEO, and lots more.  I've touched countless different technologies, lately focusing more on single-page applications.</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="maininner">
+          <div class="page-header">
+            <h1 class="tealtext">About Me</h1>
+          </div>
+          <img src="assets/images/David-OldTown-Jerusalem.jpg" alt="me" class="profileimage pull-left">
+          <p>I know my way around the front-end of web development, rising to peripheral challenges that have arisen over the years, a jack of all trades when duty calls.  I've managed projects, done some SEO, and lots more.  I've touched countless different technologies, lately focusing mostly on single-page applications.</p>
           <p>On a personal level, I've volunteered with a collective that manages an open-publishing social justice news website since 2004, as well as doing my own independent reporting, photography, and videography.  When not doing all of those things, I love to unplug and head for the mountains in the winter, an avid snowboarder and powder hound. Bring it on, big sky.</p>
         </div>
-
-        <div class="social maincontent">
-          <h3 class="tealtext">Connect with Me</h3>
+      </div>
+      <div class="col-sm-4">
+        <div class="social maininner">
+          <div class="page-header">
+            <h3 class="tealtext">Connect with Me</h3>
+          </div>
           <a href="https://github.com/dbmarshall/" title="GitHub"><img src="assets/images/social_if_github_square_black_107109.png" alt="GitHub"></a>
           <a href="https://www.Linkedin.com/in/david-m/" title="Linkedin"><img src="assets/images/social_if_linkedin_334668.png" alt="Linkedin"></a>
           <a href="https://stackoverflow.com/users/3787666/david" title="Stack Overflow"><img src="assets/images/social_if_stackoverflow_273179.png" alt="Stack Overflow" class="last"></a>
         </div>
-
       </div>
-    </section>
-
+    </div>
   </div>
 
-  <footer>
-    <div class="mainwrapper">
+  <footer class="footer">
+    <div class="container">
       <div class="copyright">
         <p>&copy; Copyright 2017 David Morse</p>
       </div>
@@ -55,5 +62,4 @@
   </footer>
 
 </body>
-
 </html>

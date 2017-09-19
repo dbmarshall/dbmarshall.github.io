@@ -1,63 +1,73 @@
-<!-- CSS Stylesheets with Relative Paths -->
-
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Basic Portfolio :: David Morse</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <title>Bootstrap Portfolio :: David Morse :: Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 
-  <div id="container">
-
-    <header>
-      <div class="mainwrapper">
-        <div id="name" class="tealback">
-          <h1>David Morse</h1>
-        </div>
-        <div id="nav">
-          <p><a href="index.html" title="About Me">About</a> <span>|</span> <a href="portfolio.html" title="My Portfolio">Portfolio</a> <span>|</span> <a href="contact.html" title="Contact Me">Contact</a></p>
+  
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <div id="name" class="navbar-brand tealback">
+          David Morse
         </div>
       </div>
-    </header>
+      <div id="navbar"> 
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <section id="main">
-      <div class="mainwrapper">
-        <div class="content maincontent">
-          <h2 class="tealtext">Contact</h2>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="maininner">
+          <div class="page-header">
+            <h1 class="tealtext">Contact</h1>
+          </div>
           
           <div class="contactform">
             <form>
-              Name:<br>
-              <input type="text" name="name" placeholder="Jane Smith"><br>
+              <label for="name">Name:</label><br>
+              <input type="text" name="name" placeholder="Jane Smith" class="form-control"><br>
 
-              Email:<br>
-              <input type="text" name="email" placeholder="example@gmail.com"><br>
+              <label for="email">Email:</label><br>
+              <input type="text" name="email" placeholder="example@gmail.com" class="form-control"><br>
 
-              Message:<br>
-              <textarea></textarea><br>
+              <label for="contact-message">Message:</label><br>
+              <textarea name="message" rows="6" cols="50" class="form-control"></textarea><br>
 
-              <button type="button" class="tealback">Submit</button>
+              <button type="button" class="btn btn-primary btn-lg tealback">Submit</button>
             </form>
           </div>
 
         </div>
-        <div class="social maincontent">
-          <h3 class="tealtext">Connect with Me</h3>
+      </div>
+      <div class="col-sm-4">
+        <div class="social maininner">
+          <div class="page-header">
+            <h3 class="tealtext">Connect with Me</h3>
+          </div>
           <a href="https://github.com/dbmarshall/" title="GitHub"><img src="assets/images/social_if_github_square_black_107109.png" alt="GitHub"></a>
           <a href="https://www.Linkedin.com/in/david-m/" title="Linkedin"><img src="assets/images/social_if_linkedin_334668.png" alt="Linkedin"></a>
           <a href="https://stackoverflow.com/users/3787666/david" title="Stack Overflow"><img src="assets/images/social_if_stackoverflow_273179.png" alt="Stack Overflow" class="last"></a>
         </div>
       </div>
-    </section>
-
+    </div>
   </div>
 
-  <footer>
-    <div class="mainwrapper">
+  <footer class="footer">
+    <div class="container">
       <div class="copyright">
         <p>&copy; Copyright 2017 David Morse</p>
       </div>
@@ -65,5 +75,4 @@
   </footer>
 
 </body>
-
 </html>

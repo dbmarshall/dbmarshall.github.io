@@ -1,95 +1,131 @@
-<!-- CSS Stylesheets with Relative Paths -->
-
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Basic Portfolio :: David Morse</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <title>Bootstrap Portfolio :: David Morse :: Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 
-  <div id="container">
-
-    <header>
-      <div class="mainwrapper">
-        <div id="name" class="tealback">
-          <h1>David Morse</h1>
-        </div>
-        <div id="nav">
-          <p><a href="index.html" title="About Me">About</a> <span>|</span> <a href="portfolio.html" title="My Portfolio">Portfolio</a> <span>|</span> <a href="contact.html" title="Contact Me">Contact</a></p>
+  
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <div id="name" class="navbar-brand tealback">
+          David Morse
         </div>
       </div>
-    </header>
+      <div id="navbar"> 
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">About</a></li>
+          <li class="active"><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <section id="main">
-      <div class="mainwrapper">
 
-        <div class="content maincontent">
-          <h2 class="tealtext">Portfolio</h2>
-          <div class="gallery">
-
-            <div class="thumb">
-              <a href="https://en.wikipedia.org/wiki/Chrome_OS" title="Google Chrome OS Get Help App"><img src="assets/images/port_chromebook-help-app-crop.png" alt="Chrome OS Get Help App"></a>
-              <div class="label tealback">
-                <h4>Chrome Get Help App</h4>
-              </div>
-            </div>
-
-            <div class="thumb even">
-              <a href="http://digitalbytes.commonsensemedia.org" title="Common Sense Media Digital Bytes"><img src="assets/images/port_digitalbytes-screen-crop.png" alt="Digital Bytes"></a>
-              <div class="label tealback">
-                <h4>Digital Bytes</h4>
-              </div>
-            </div>
-
-            <div class="thumb">
-              <a href="https://www.rodanandfields.com/getstarted/" title="Rodan + Fields Consulant Getting Started App"><img src="assets/images/port_rodan_fields_logo2-crop.png" alt="R+F Getting Started App"></a>
-              <div class="label tealback">
-                <h4>R+F Getting Started App</h4>
-              </div>
-            </div>
-
-            <div class="thumb even">
-              <a href="http://accuray.com" title="Accuray Medical Devices"><img src="assets/images/port_accuray-crop.png" alt="Accuray"></a>
-              <div class="label tealback">
-                <h4>Accuray</h4>
-              </div>
-            </div>
-
-            <div class="thumb bottom">
-              <a href="http://www.stopwaste.org/" title="Alameda County Waste Management Authority StopWaste Online Resource"><img src="assets/images/port_stopwaste-crop.png" alt="Stop Waste"></a>
-              <div class="label tealback">
-                <h4>Stop Waste</h4>
-              </div>
-            </div>
-
-            <div class="thumb even bottom">
-              <a href="https://www.indybay.org/" title="San Francisco Bay Area Independent Media Center"><img src="assets/images/port_indybay-crop.png" alt="Indybay"></a>
-              <div class="label tealback">
-                <h4>Indybay</h4>
-              </div>
-            </div>
-
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="maininner">
+          <div class="page-header">
+            <h1 class="tealtext">Portfolio</h1>
           </div>
-        </div>
 
-        <div class="social maincontent">
-          <h3 class="tealtext">Connect with Me</h3>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12">
+              
+              <div class="thumb">
+                <a href="https://en.wikipedia.org/wiki/Chrome_OS" title="Google Chrome OS Get Help App"><img src="assets/images/port_chromebook-help-app-crop.png" alt="Chrome OS Get Help App"></a>
+                <div class="thumb-label tealback">
+                  <h4>Chrome Get Help App</h4>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12">
+              
+              <div class="thumb">
+                <a href="http://digitalbytes.commonsensemedia.org" title="Common Sense Media Digital Bytes"><img src="assets/images/port_digitalbytes-screen-crop.png" alt="Digital Bytes"></a>
+                <div class="thumb-label tealback">
+                  <h4>Digital Bytes</h4>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12">
+              
+              <div class="thumb">
+                <a href="https://www.rodanandfields.com/getstarted/" title="Rodan + Fields Consulant Getting Started App"><img src="assets/images/port_rodan_fields_logo2-crop.png" alt="R+F Getting Started App"></a>
+                <div class="thumb-label tealback">
+                  <h4>R+F Getting Started App</h4>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12">
+              
+              <div class="thumb">
+                <a href="http://accuray.com" title="Accuray Medical Devices"><img src="assets/images/port_accuray-crop.png" alt="Accuray"></a>
+                <div class="thumb-label tealback">
+                  <h4>Accuray</h4>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12">
+              
+              <div class="thumb">
+                <a href="http://www.stopwaste.org/" title="Alameda County Waste Management Authority StopWaste Online Resource"><img src="assets/images/port_stopwaste-crop.png" alt="Stop Waste"></a>
+                <div class="thumb-label tealback">
+                  <h4>Stop Waste</h4>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12">
+              
+              <div class="thumb">
+                <a href="https://www.indybay.org/" title="San Francisco Bay Area Independent Media Center"><img src="assets/images/port_indybay-crop.png" alt="Indybay"></a>
+                <div class="thumb-label tealback">
+                  <h4>Indybay</h4>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="social maininner">
+          <div class="page-header">
+            <h3 class="tealtext">Connect with Me</h3>
+          </div>
           <a href="https://github.com/dbmarshall/" title="GitHub"><img src="assets/images/social_if_github_square_black_107109.png" alt="GitHub"></a>
           <a href="https://www.Linkedin.com/in/david-m/" title="Linkedin"><img src="assets/images/social_if_linkedin_334668.png" alt="Linkedin"></a>
           <a href="https://stackoverflow.com/users/3787666/david" title="Stack Overflow"><img src="assets/images/social_if_stackoverflow_273179.png" alt="Stack Overflow" class="last"></a>
         </div>
-
       </div>
-    </section>
-
+    </div>
   </div>
 
-  <footer>
-    <div class="mainwrapper">
+  <footer class="footer">
+    <div class="container">
       <div class="copyright">
         <p>&copy; Copyright 2017 David Morse</p>
       </div>
@@ -97,5 +133,4 @@
   </footer>
 
 </body>
-
 </html>
